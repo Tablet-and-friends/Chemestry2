@@ -10,20 +10,18 @@
 </head>
 
 <body>
-
-
     <nav>
         <ul>
             <li><a class="active" href="Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                    <li><a href="#">IA</a></li>
-                    <li><a href="#">IIA</a></li>
-                    <li><a href="#">IIIA</a></li>
-                    <li><a href="#">IVA</a></li>
-                    <li><a href="#">VA</a></li>
-                    <li><a href="#">VIA</a></li>
-                    <li><a href="#">VIA</a></li>
+                    <li><a href="pages/IA.html">IA</a></li>
+                    <li><a href="pages/IIA.html">IIA</a></li>
+                    <li><a href="pages/IIIA.html">IIIA</a></li>
+                    <li><a href="pages/IVA.html">IVA</a></li>
+                    <li><a href="pages/VA.html">VA</a></li>
+                    <li><a href="pages/VIA.html">VIIA</a></li>
+                    <li><a href="pages/VII.html">VIA</a></li>
                 </ul>
             </li>
             <li><a class = "top" href="#elements">Елементи</a></li>
@@ -31,7 +29,7 @@
         </ul>
         <p>ХИМИЯ</p >
         <div class="s">
-            <input type="text" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);" onfocus="closeSearch();">
+            <input type="text" placeholder="Search for an element.." value=""  onblur="this.setAttribute('value',this.value); check(this.value);" onblur="check(this.value);" onblur="closeSearch();">
 
             <div class="res">
             <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
@@ -62,6 +60,7 @@
             </div>
         </div>
     </nav>
+
     <div class="main">
     <img src="assets\Periodic_Table.png" alt="Periodic table of elements" class="PerTable" usemap="#PerTable">
 
