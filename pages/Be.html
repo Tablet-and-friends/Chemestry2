@@ -5,70 +5,137 @@
     <link rel="stylesheet" type="text/css" href="..\style.css">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One&display=swap" rel="stylesheet">
     <title>Втора "А" група - Берилий</title>
+    <script src="https://kit.fontawesome.com/678d6674eb.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="..\search.js"></script>
+    <style>
+      p{
+        margin-bottom: 20px;
+      }
+      ol{
+
+      }
+      ul{
+
+        width: 100%;
+        margin-left: 40px;
+      }
+
+
+    </style>
 </head>
 
 <body>
-  <nav>
-      <ul>
-          <li><a class="active" href="..\Home.html">Таблица</a></li>
-          <li><a class = "top" href="#groups">Групи</a>
-              <ul>
-                  <li><a href="IIA.html">IIA</a></li>
-                  <li><a href="IIIA.html">IIIA</a></li>
-                  <li><a href="IVA.html">IVA</a></li>
-                  <li><a href="VA.html">VA</a></li>
-                  <li><a href="VIA.html">VIA</a></li>
-                  <li><a href="VIIA.html">VIIA</a></li>
-              </ul>
-          </li>
-          <li><a class = "top" href="#elements">Елементи</a></li>
-          <li><a class = "top" href="#about">Създатели</a></li>
-      </ul>
-      <p>ХИМИЯ</p >
-      <div class="s">
-          <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
+    <nav>
+        <span class = "open-slide">
+            <a href="#" onclick = "openSlideMenu()">
+                <i class = "fas fa-bars"></i>
+            </a>
+        </span>
+        <ul>
+            <li><a class="active" href="../Home.html">Таблица</a></li>
+            <li><a class = "top" href="#groups">Групи</a>
+                <ul>
+                    <li><a href="IA.html">IA</a></li>
+                    <li><a href="IIA.html">IIA</a></li>
+                    <li><a href="IIIA.html">IIIA</a></li>
+                    <li><a href="IVA.html">IVA</a></li>
+                    <li><a href="VA.html">VA</a></li>
+                    <li><a href="VIA.html">VIA</a></li>
+                    <li><a href="VIIA.html">VIIA</a></li>
+                </ul>
+            </li>
+            <li><a class = "top" href="#elements">Елементи</a></li>
+            <li><a class = "top" href="#about">Създатели</a></li>
+        </ul>
+        <p>ХИМИЯ</p >
+          <div class="s">
+             <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
 
-          <div class="res">
-          <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
-          <div id="Mg"><a href="pages/Mg.html">Магнезий (Mg)</a></div>
-          <div id="Ca"><a href="pages/Ca.html">Калций (Ca)</a></div>
-          <div id="Sr"><a href="pages/Sr.html">Стронций (Sr)</a></div>
-          <div id="Ba"><a href="pages/Ba.html">Барий (Ba)</a></div>
-          <div id="B"><a href="pages/B.html">Бор (B)</a></div>
-          <div id="Al"><a href="pages/Al.html">Алуминий (Al)</a></div>
-          <div id="Ga"><a href="pages/Ga.html">Галий (Ga)</a></div>
-          <div id="In"><a href="pages/In.html">Индий (In)</a></div>
-          <div id="C"><a href="pages/C.html">Въглерод (C)</a></div>
-          <div id="Si"><a href="pages/Si.html">Силиций (Si)</a></div>
-          <div id="Ge"><a href="pages/Ge.html">Германий (Ge)</a></div>
-          <div id="Sn"><a href="pages/Sn.html">Калай (Sn)</a></div>
-          <div id="N"><a href="pages/N.html">Азот (N)</a></div>
-          <div id="P"><a href="pages/P.html">Фосфор (P)</a></div>
-          <div id="As"><a href="pages/As.html">Арсен (As)</a></div>
-          <div id="Sb"><a href="pages/Sb.html">Антимон (Sb)</a></div>
-          <div id="O"><a href="pages/O.html">Кислород (O)</a></div>
-          <div id="S"><a href="pages/S.html">Сяра (S)</a></div>
-          <div id="Se"><a href="pages/Se.html">Селен (Se)</a></div>
-          <div id="Te"><a href="pages/Te.html">Телур (Te)</a></div>
-          <div id="F"><a href="pages/F.html">Флуор (F)</a></div>
-          <div id="Cl"><a href="pages/Cl.html">Хлор (Cl)</a></div>
-          <div id="Br"><a href="pages/Br.html">Бром (Br)</a></div>
-          <div id="I"><a href="pages/I.html">Йод (I)</a></div>
-          </div>
-      </div>
-  </nav>
-            <div class="main">
+             <div class="res">
+             <div id="Be"><a href="Be.html">Берилий (Be)</a></div>
+             <div id="Mg"><a href="Mg.html">Магнезий (Mg)</a></div>
+             <div id="Ca"><a href="Ca.html">Калций (Ca)</a></div>
+             <div id="Sr"><a href="Sr.html">Стронций (Sr)</a></div>
+             <div id="Ba"><a href="Ba.html">Барий (Ba)</a></div>
+             <div id="B"><a href="B.html">Бор (B)</a></div>
+             <div id="Al"><a href="Al.html">Алуминий (Al)</a></div>
+             <div id="Ga"><a href="Ga.html">Галий (Ga)</a></div>
+             <div id="In"><a href="In.html">Индий (In)</a></div>
+             <div id="C"><a href="C.html">Въглерод (C)</a></div>
+             <div id="Si"><a href="Si.html">Силиций (Si)</a></div>
+             <div id="Ge"><a href="Ge.html">Германий (Ge)</a></div>
+             <div id="Sn"><a href="Sn.html">Калай (Sn)</a></div>
+             <div id="N"><a href="N.html">Азот (N)</a></div>
+             <div id="P"><a href="P.html">Фосфор (P)</a></div>
+             <div id="As"><a href="As.html">Арсен (As)</a></div>
+             <div id="Sb"><a href="Sb.html">Антимон (Sb)</a></div>
+             <div id="O"><a href="O.html">Кислород (O)</a></div>
+             <div id="S"><a href="S.html">Сяра (S)</a></div>
+             <div id="Se"><a href="Se.html">Селен (Se)</a></div>
+             <div id="Te"><a href="Te.html">Телур (Te)</a></div>
+             <div id="F"><a href="F.html">Флуор (F)</a></div>
+             <div id="Cl"><a href="Cl.html">Хлор (Cl)</a></div>
+             <div id="Br"><a href="Br.html">Бром (Br)</a></div>
+             <div id="I"><a href="I.html">Йод (I)</a></div>
+             </div>
+         </div>
+    </nav>
+
+
+  <div class="main" id = "main-content">
       <h1>Берилий (Be)</h1>
-      <img src="..\assets\IIA\Be_Picture.jpg" alt="снимка на берилий">
-      <div >
-        <img src="..\assets\IIA\Be-sf.jpg" alt="кристална решетка">
-      </div>
 
       <div class="ElementInfo">
-        <p>Cl Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <img src="..\assets\IIA\Be_Picture.jpg" alt="снимка на берилий" class="picture" style="margin: 0px 40px ";>
+          <img src="..\assets\IIA\Be-sf.jpg" alt="кристална решетка" class="picture" style="margin: 0px 40px ";>
+        <p>Берилият е от втора "А" група на периодичната система и принадлежи към алкалоземните метали, които включват елементите Магнезий (Mg), Калций (Ca), Стронций (Sr) и Барий (Ba). </p>
         <img src="..\assets\IIA\Be_Structure.png" alt="атомна структура на берилий " class="Element">
+        <ol>
+          <li style="font-size: 40px";>Електронна конфигурация
+          <div class="configuration"><sub>4</sub>Be-1s<sup>2</sup>2s<sup>2</sup>
+            </div></li>
+
+          <li style="font-size: 40px";>Физични свойства<ul>
+            <li>Берилият е светлосив метал.</li>
+            <li>Устойчив е на корозия</li>
+            <li class"list">Берилият е изключителен лек, но твърд метал, който е устойчив на въздуха.</li>
+            <li>Притежава метален блясък подобно на останалите метали</li>
+            <li>Берилият е най-лекият член на семейството на алкалоземни метали.</li>
+            <li>Интересното е, че берилият е прозрачен за рентгенови лъчи.</li>
+          </ul></li>
+          <li style="font-size: 40px";>Химични свойства<ul>
+            <li>Берилият има само един устойчив изотоп, който се среща в природата. Металният берилий не реагира изцяло с въздуха, защото се покрива с оксидна коричка. Освен това тя пречи и на реакцията му с вода, която е невъзможна. Прахообразният берилий гори на въздуха като се получава смес от берилиев оксид и берилиев нитрид.
+            <div class="Reaction">2Be + O<sub>2</sub> &rarr; 2BeO
+            </div>
+            <li>Взаимодействието с халогени протича при нагряване, като се изключи флуора, който реагира при обикновена температура
+              <div class="Reaction">Be + Cl<sub>2</sub> &rarr; BeCl<sub>2</sub>
+              </div>
+            <li>Берилиев нитрид може да се получи след директно взаимодействие на берилий и азот при температура 1100&deg; C
+              <div class="Reaction">3Be + N<sub>2</sub> &rarr; Be<sub>3</sub>Cl<sub>2</sub>
+              </div>
+            <li>Берилият реагира и с кислелини
+              <div class="Reaction">Be + H<sub>2</sub>SO<sub>4</sub> &rarr; BeSO<sub>4</sub> + H<sub>2</sub>
+              </div>
+            <li>Взаимодействие на берилий с вода
+              <div class="Reaction">2Be + 3H<sub>2</sub>O &rarr; BeO + Be(OH)<sub>2</sub> + 2H<sub>2</sub>
+              </div>
+            <li>Взаимодействие с водород
+              <div class="Reaction">Be + H<sub>2</sub> &rarr; BeH<sub>2</sub>
+              </div>
+          </ul></li>
+          <li style="font-size: 40px">Цвят на пламъка:</li>
+
+
+          <p class="configuration"> Цветът на пламъка на берилия е бял.</p>
+          <p><li style="font-size: 40px";>Получаване
+          <p>Берилий се добива предимно от берил, като в процеса на преработване се получават берилиев хлорид и флуорид , като впоследствие флуорида се редуцира с магнезий при температура 1300&deg;C в графитни тигели(пещи). </p></li>
+      <p class="Reaction" style="margin-left: 40px";>BeF<sub>2</sub> + Mg &rarr; Be + MgF<sub>2</sub></p>
+      <li style="font-size: 40px">Значение и употреба</li>
+          <p ><img src="..\assets\IIA\4-berilii.png" alt="фрамар берилий"   class="El_picture">
+          Използва се предимно под формата на сплави в много области. От космически технологии до електрониката и промишлеността, където е необходим метал, който не се намагнитизира и притежава ниска атомна маса. Също така се използва и при рентгеновата апаратура. Този елемент се използва и в ядрените технологии, като в това число и в оръжията за масово унищожение.</p>
+
+</ol>
+
       </div>
     </div>
 

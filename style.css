@@ -4,9 +4,17 @@
 }
 body{
   background-color: #fecf9d;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sana', sans-serif;
+  overflow-x: hidden;
 }
 
+.configuration{
+  font-size: 23px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 nav {
    /* background-color: #333; */
    background-color: #d97a15;
@@ -15,10 +23,9 @@ nav {
   width: 100%;
   z-index: 1;
   height: 64px;
+  position: fixed;
+  top: 0px;
 }
-
-/* Style the links inside the navigation bar */
-
 nav ul{
     float: left;
 
@@ -40,8 +47,21 @@ nav ul li a{
   padding: 18px 16px;
   text-decoration: none;
   font-size: 22px;
+  border-color: transparent;
+  border-style: solid;
   transition: color 0.5s,border linear 0.5s;
 }
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 100px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    background-image: -webkit-linear-gradient(90deg,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 nav ul li ul{
     margin-top:60px;
 
@@ -54,12 +74,10 @@ nav ul li ul{
 }
 nav ul li:hover ul{
     display: block;
-    transition-: 3s;
 }
 nav ul li ul li{
     text-align: center;
 }
-
 nav ul li ul li a{
     padding: 9px 21px 9px 21px;
     margin-left: 10px;
@@ -95,55 +113,38 @@ nav p{
         float: left;
         padding-left: 7%;
  }
-
-/*a{
-  display: block;
-  margin-bottom: 50px;
-}*/
-
-.res{
-  display: block;
-  position: absolute;
+ .res{
+   display: block;
+   position: absolute;
+ }
+ .res div {
+   display: none;
+   background-image: linear-gradient(180deg,white,rgb(238, 255, 204));
+   padding: 5px;
+   width: 130px;
+   border-bottom: 1px solid black;
+   z-index: 2;
+ }
+ .s{
+   position: relative;
+   display: inline-block;
 }
-.res div {
-  display: none;
-  background-image: linear-gradient(180deg,white,rgb(238, 255, 204));
-  padding: 5px;
-  width: 130px;
-  border-bottom: 1px solid black;
-  z-index: 2;
-}
-
-.s{
-  position: relative;
-  display: inline-block;
-  float: right;
-}
-
-.s a{
-  text-decoration: none;
-  color: black;
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-weight: bold;
-}
-
-.topnav input[type=text] {
-  position: relative;
-    padding: 12px;
-    background-color: #fecf9d;
-    /*border: 3px solid rgb(255, 255, 146);*/
-    margin-top: 8px;
-    margin-right: 16px;
-    height: 20px;
-    font-size: 17px;
-  }
-
-.pic{
-  margin: 0 20px;
-  display: inline;
-  width: 25%;
-}
-
+ .s a{
+   text-decoration: none;
+   color: black;
+   font-family: 'Sedgwick Ave Display', cursive;
+   font-weight: bold;
+ }
+ nav input[type=text] {
+   position: relative;
+     padding: 12px;
+     background-color: #fecf9d;
+     border: 3px solid rgb(255, 255, 146);
+     margin-top: 8px;
+     margin-right: 16px;
+     height: 15px;
+     font-size: 17px;
+   }
   h1{
     text-align: center;
     margin-bottom: 50px;
@@ -184,7 +185,6 @@ nav p{
    margin: auto;
    margin-top: 50px;
 }
-
   .periods td{
     font-family: sans-serif;
     font-size: 17px;
@@ -198,6 +198,7 @@ nav p{
     margin: auto;
   }
 
+
   .Element{
     float: right;/*
     display: inline-block;*/
@@ -205,7 +206,6 @@ nav p{
     margin:20px;
     /*-webkit-transition: -webkit-transform .8s ease-in-out;*/
   }
-
 .Element:hover {
   -webkit-transform: rotate(3600deg);
     -webkit-transition-duration: 60s;
@@ -223,19 +223,15 @@ nav p{
   margin-top: 100px;
   height:250px;
 }
-
+ .El_picture{
+   float: right;
+ }
 .main{
   margin-top:150px;
-  margin-left: 220px;
+  margin-left: 0px;
+  padding-left: 50px;
+  transition: 0.5s;
 }
-
-.group{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
 .main ul{
   width: 80%;
   list-style-image: url('assets/kolba.png');
@@ -251,10 +247,12 @@ nav p{
   margin:10px;
 }
 
+
 .Reaction{
   display: block;
-  margin: auto;
   margin-top: 30px;
   margin-bottom: 20px;
-  width:50%;
+  margin-left: 50px;
+  width:100%;
+font-size: 25px;
 }

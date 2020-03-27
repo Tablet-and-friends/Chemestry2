@@ -10,19 +10,23 @@
 </head>
 
 <body>
-
-
     <nav>
+        <span class = "open-slide">
+            <a href="#" onclick = "openSlideMenu()">
+                <i class = "fas fa-bars"></i>
+            </a>
+        </span>
         <ul>
             <li><a class="active" href="Home.html">Таблица</a></li>
             <li><a class = "top" href="#groups">Групи</a>
                 <ul>
-                  <li><a href="pages/IIA.html">IIA</a></li>
-                  <li><a href="pages/IIIA.html">IIIA</a></li>
-                  <li><a href="pages/IVA.html">IVA</a></li>
-                  <li><a href="pages/VA.html">VA</a></li>
-                  <li><a href="pages/VIA.html">VIA</a></li>
-                  <li><a href="pages/VIIA.html">VIIA</a></li>
+                    <li><a href="pages/IA.html">IA</a></li>
+                    <li><a href="pages/IIA.html">IIA</a></li>
+                    <li><a href="pages/IIIA.html">IIIA</a></li>
+                    <li><a href="pages/IVA.html">IVA</a></li>
+                    <li><a href="pages/VA.html">VA</a></li>
+                    <li><a href="pages/VIA.html">VIIA</a></li>
+                    <li><a href="pages/VII.html">VIA</a></li>
                 </ul>
             </li>
             <li><a class = "top" href="#elements">Елементи</a></li>
@@ -30,8 +34,7 @@
         </ul>
         <p>ХИМИЯ</p >
         <div class="s">
-            <input type="text" style="border:3px solid transparent;padding:8px;font-size: 16px;margin-top:15px;margin-right:15px;" placeholder="Search for an element.." value=""  oninput="this.setAttribute('value',this.value); check(this.value);" onfocus="check(this.value);this.style.border='3px solid yellow';" onblur="setTimeout(closeSearch, 100);this.style.border='3px solid transparent';">
-
+            <input type="text" placeholder="Search for an element.." value=""  onblur="this.setAttribute('value',this.value); check(this.value);" onblur="check(this.value);" onblur="closeSearch();">
 
             <div class="res">
             <div id="Be"><a href="pages/Be.html">Берилий (Be)</a></div>
@@ -62,7 +65,19 @@
             </div>
         </div>
     </nav>
-    <div class="main">
+
+    <div class="slide-nav" id = "slide-menu">
+        <a href="#" class = "close-slide" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a href="#">Химични Свойства</a>
+        <a href="#">Физични Свойства</a>
+        <a href="#">Получаване</a>
+        <a href="#">Употреба</a>
+    </div>
+
+
+  <div class="main" id = "main-content">
     <img src="assets\Periodic_Table.png" alt="Periodic table of elements" class="PerTable" usemap="#PerTable">
 
     <map name="PerTable">
